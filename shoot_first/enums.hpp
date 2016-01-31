@@ -1,0 +1,29 @@
+#ifndef _ENUMS_HPP_
+#define _ENUMS_HPP_
+
+enum TANK_STATE{
+	INVULNERABLE = 0,
+	VULNERABLE
+};
+
+enum TIMER_STATE{
+	ALIVE = 0,
+	SLEEPING,
+	ENDED
+};
+
+enum STATE{
+	STOPPED = 0,
+	WALKING,
+	DEAD
+};
+
+enum DIRECTION{
+	UP = 0,
+	LEFT,
+	RIGHT,
+	DOWN,
+	INC
+};
+
+#endif

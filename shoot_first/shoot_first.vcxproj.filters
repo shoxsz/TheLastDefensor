@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{bda7f68b-2a70-45b4-8f0f-1559942d1c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bullets">
+      <UniqueIdentifier>{35ff541a-2efd-48e7-a494-b093a5620aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bullets">
+      <UniqueIdentifier>{bcb4f244-6bff-4a8c-b9ee-60881e965e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\fighters">
+      <UniqueIdentifier>{b6dea9ad-6e2a-44dc-9794-c6fab1d96fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\fighters">
+      <UniqueIdentifier>{378632f9-cfb4-4f21-a48a-c75cc0d512fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{ca5edc09-9f09-4481-b666-e165456fd5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\boosts">
+      <UniqueIdentifier>{85fa552b-28dd-4d6b-8e5d-97da1a9c0594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\boost">
+      <UniqueIdentifier>{4ed05708-7785-4a60-876f-eaecc46951ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{f01d0f42-eb21-4a23-a65c-090a56635f65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shoot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_bullet.cpp">
+      <Filter>Source Files\bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="fighter.cpp">
+      <Filter>Source Files\fighters</Filter>
+    </ClCompile>
+    <ClCompile Include="soldier.cpp">
+      <Filter>Source Files\fighters</Filter>
+    </ClCompile>
+    <ClCompile Include="tank.cpp">
+      <Filter>Source Files\fighters</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="game_textures.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="painter.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="game_thing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boost.cpp">
+      <Filter>Source Files\boost</Filter>
+    </ClCompile>
+    <ClCompile Include="effect.cpp">
+      <Filter>Source Files\boost</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>Source Files\bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="texture_region.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loop_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2d_camera.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="area.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="point.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="size.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="image.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="shoot.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enums.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="game_thing.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timed_object.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="random.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_bullet.hpp">
+      <Filter>Header Files\bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="game_textures.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="soldier.hpp">
+      <Filter>Header Files\fighters</Filter>
+    </ClInclude>
+    <ClInclude Include="tank.hpp">
+      <Filter>Header Files\fighters</Filter>
+    </ClInclude>
+    <ClInclude Include="fighter.hpp">
+      <Filter>Header Files\fighters</Filter>
+    </ClInclude>
+    <ClInclude Include="painter.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="color.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.hpp">
+      <Filter>Header Files\bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="boost.hpp">
+      <Filter>Header Files\boosts</Filter>
+    </ClInclude>
+    <ClInclude Include="effect.hpp">
+      <Filter>Header Files\boosts</Filter>
+    </ClInclude>
+    <ClInclude Include="texture_region.hpp">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
