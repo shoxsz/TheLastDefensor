@@ -79,10 +79,16 @@ void Game::pre(){
 	start();
 }
 
+#include <iostream>
+
 void Game::process(SDL_Event* event){
 	switch (event->type){
 	case SDL_QUIT:
 		running = false;
+		break;
+	case SDL_WINDOWEVENT:
+		if (event->window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
+			glViewport(0, 0, event->window.data1, event->window.data2);
 		break;
 	case SDL_KEYDOWN:
 		p1->keyDown(&event->key);
@@ -154,7 +160,7 @@ void Game::logics(){
 	}
 
 
-	world->Step(1.0f / 40.0f, 8, 30);
+	world->Step(1.0f / 40.0f, 1, 1);
 }
 
 void Game::render(){
