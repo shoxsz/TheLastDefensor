@@ -18,7 +18,7 @@ int main(int argc, char* argv[]){
 	Timer fps_ct;
 
 	const unsigned int DISERED_DELAY = 25;
-	unsigned int start, end, loop_t, excess = 0;
+	unsigned int start, end, loop_t = 0, excess = 0;
 
 	SDL_Event event;
 	LoopHandler* handler = nullptr;
@@ -87,7 +87,7 @@ SDL_Window* initSDL(const std::string& title, unsigned int w, unsigned int h){
 	if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
 		throw std::runtime_error(SDL_GetError());
 
-	window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, w, h, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
+	window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, w, h, SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
 
 	if (window == NULL)
 		throw std::runtime_error(SDL_GetError());
