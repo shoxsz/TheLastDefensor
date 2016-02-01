@@ -154,7 +154,7 @@ void Game::logics(){
 	}
 
 
-	world->Step(1.0f / 40.0f, 2, 6);
+	world->Step(1.0f / 40.0f, 8, 30);
 }
 
 void Game::render(){
