@@ -2,7 +2,10 @@
 
 #include <cmath>
 
-Painter::Painter(){}
+Painter::Painter(){
+	drawning_now = nullptr;
+}
+
 Painter::~Painter(){}
 
 void Painter::rotate(float angle){

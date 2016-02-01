@@ -10,18 +10,20 @@
 #include "size.hpp"
 #include "color.hpp"
 
-/*Represents a draw batcher*/
+/*Represents a texture batcher*/
 class Painter{
 public:
 	Painter();
 	~Painter();
 
 	void begin(Texture2D* texture){
-		drawning_now = texture;
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glEnable(GL_TEXTURE_2D);
-		drawning_now->bind();
+		if (drawning_now != texture){
+			drawning_now = texture;
+			drawning_now->bind();
+		}
 		glBegin(GL_QUADS);
 	}
 
