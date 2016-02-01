@@ -79,8 +79,6 @@ void Game::pre(){
 	start();
 }
 
-#include <iostream>
-
 void Game::process(SDL_Event* event){
 	switch (event->type){
 	case SDL_QUIT:
