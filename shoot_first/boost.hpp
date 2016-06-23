@@ -32,7 +32,7 @@ private:
 	BOOST_TYPE btype;
 };
 
-#define TIMED_BOOST_SIZE 2.0f
+#define TIMED_BOOST_SIZE 4.0f
 
 /*process the boost item on the ground*/
 class TimedBoostItem : public TimedObject{

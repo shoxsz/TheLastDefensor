@@ -34,23 +34,19 @@ int main(int argc, char* argv[]){
 		handler->pre();
 		fps_ct.start();
 		while (handler->active()){
-			start = SDL_GetTicks();
-
 			while (SDL_PollEvent(&event)){
 				handler->process(&event);
 			}
-
 			while (excess < DISERED_DELAY){
 				handler->logics();
 				excess -= DISERED_DELAY;
 			}
-
 			handler->logics();
 
+			start = SDL_GetTicks();
 			glClear(GL_COLOR_BUFFER_BIT);
 			handler->render();
 			SDL_GL_SwapWindow(window);
-			
 			end = SDL_GetTicks();
 			loop_t = end - start;
 			if (loop_t < DISERED_DELAY){
@@ -59,13 +55,10 @@ int main(int argc, char* argv[]){
 			else{
 				excess += DISERED_DELAY - loop_t;
 			}
-
 			if (fps_ct.compare(1000)){
-				system("cls");
-				std::cout << "fps: " << fps_c << std::endl;
+				std::cout << fps_c << std::endl;
 				fps_c = 0;
 			}
-
 			fps_c++;
 		}
 		handler->pos();
